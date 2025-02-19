@@ -1,0 +1,72 @@
+.bg-img {
+  background-image: url("https://media.istockphoto.com/id/144235066/photo/flying-moto.jpg?s=1024x1024&w=is&k=20&c=Vvq4eEZrNQgDQAuUWvcOuhFGYnkFfKt-Tcbwm453vc4=");
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  position: relative;
+}
+
+.card {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.container-fluid.bg-dark {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .bg-img {
+    min-height: 500px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .bg-img .text-center {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-img {
+    min-height: 700px;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .bg-img .text-center {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
