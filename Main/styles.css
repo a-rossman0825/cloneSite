@@ -6,6 +6,15 @@
   position: relative;
 }
 
+.btn-pill {
+  border-radius: 50px;
+}
+
+.card-emoji {
+  font-size: 3.5rem;
+}
+
+
 .card {
   margin-bottom: 1rem;
   display: flex;
