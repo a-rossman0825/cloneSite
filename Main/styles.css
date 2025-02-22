@@ -59,10 +59,22 @@
     text-align: center;
   }
 
+  .sports-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
   .card {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.carousel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 @media (min-width: 992px) {
