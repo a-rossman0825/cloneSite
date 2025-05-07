@@ -1,0 +1,220 @@
+.bg-img {
+  background-image: url("https://media.istockphoto.com/id/144235066/photo/flying-moto.jpg?s=1024x1024&w=is&k=20&c=Vvq4eEZrNQgDQAuUWvcOuhFGYnkFfKt-Tcbwm453vc4=");
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.page-top.text-dark.py-2 {
+  background-color: #2b2b2b;
+  color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bg-img h1 {
+  margin-bottom: 1rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 32px;
+  vertical-align: middle;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.jumbotron-text {
+  margin-left: auto;
+  margin-right: 4rem;
+  text-align: right;
+}
+
+.mdi {
+  vertical-align: middle;
+}
+
+.btn-pill {
+  border-radius: 50px;
+  margin-top: 1rem;
+}
+
+.features-section {
+  background-image: url('../Main/images/Features-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  padding: 4rem 0;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.features-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.features-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.card-emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+
+.card {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #1c1c1c;
+  color: #fff;
+  border: none;
+}
+
+.card-body {
+  min-height: 160px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.sports-img {
+  border-radius: 8px;
+}
+
+.sports-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.video-section {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.7)
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+.video-content {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel .bg-danger {
+  min-height: 80px;
+}
+.carousel-inner {
+  padding: 0 1rem;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .sports-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.carousel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .jumbotron-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .features .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
