@@ -1,3 +1,6 @@
+
+/* Class Selectors */
+
 .bg-img {
   background-image: url("https://media.istockphoto.com/id/144235066/photo/flying-moto.jpg?s=1024x1024&w=is&k=20&c=Vvq4eEZrNQgDQAuUWvcOuhFGYnkFfKt-Tcbwm453vc4=");
   background-size: cover;
@@ -5,6 +8,10 @@
   min-height: 700px;
   display: flex;
   align-items: center;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px red;
 }
 
 .page-top {
@@ -21,11 +28,6 @@
 
 }
 
-.btn:hover {
-  color: #000 !important;
-  background-color: rgb(209, 30, 53) !important;
-}
-
 .navbar-brand img {
   height: 32px;
   vertical-align: middle;
@@ -35,16 +37,6 @@
   font-size: 0.8rem;
   font-weight: 300;
   margin-left: 2.5rem;
-}
-
-.nav-link:hover {
-  color: rgb(209, 30, 53) !important;
-}
-
-.jumbotron-text {
-  margin-left: auto;
-  margin-right: 4rem;
-  text-align: right;
 }
 
 .mdi {
@@ -66,16 +58,18 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
-.features-section > * {
+.features-section-text {
+  position: relative;
+  z-index: 2;
+}
+
+.feature-card {
   position: relative;
   z-index: 2;
 }
@@ -84,7 +78,6 @@
   font-size: 3.5rem;
   line-height: 1;
 }
-
 
 .card {
   display: flex;
@@ -104,19 +97,6 @@
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.card:hover {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-  transform: translateY(-2px);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.sports-img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-  cursor: pointer;
 }
 
 .video-section {
@@ -180,6 +160,33 @@ footer {
   height: 300px;
   object-fit: cover;
 }
+
+/* EFFECTS */
+
+.btn:hover {
+  color: #000 !important;
+  background-color: rgb(209, 30, 53) !important;
+}
+
+.nav-link:hover {
+  color: rgb(209, 30, 53) !important;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sports-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* Assets */
 
 @font-face {
   font-family: 'Nico Moji';
