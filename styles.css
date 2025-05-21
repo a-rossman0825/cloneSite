@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.dash {
+  width: 40px;
+}
+
 .text-shadow {
   text-shadow: 1px 1px 1px red;
 }
@@ -51,7 +55,7 @@
   z-index: 0;
   padding: 4rem 0;
   overflow: hidden;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
 }
 
 .features-section::before {
@@ -189,6 +193,10 @@ footer {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transform: scale(1.05);
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hidden-tab:hover {
   cursor: pointer;
 }
 

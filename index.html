@@ -13,26 +13,26 @@
   <title>Sports Club</title>
 </head>
 
-<div class="bg-dark">
+<body class="bg-dark">
   <!-- SECTION: Page-Topper -->
   <!--header-->
-  <div class="page-top text-dark py-2">
+  <section class="page-top text-dark py-2">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-md-8 text-center text-md-start text-light">
+        <div class="col-12 col-md-8 text-end text-md-start text-light">
           <span class="me-4 text-light">
-            <i class="text-danger mdi mdi-map me-1"></i>1234 W Street Street City, ST 12345
+            <i class="hidden-tab text-danger mdi mdi-map me-1" onclick="hiddenTab()"></i>1234 W Street Street City, ST 12345
           </span>
           <span>
             <i class="text-danger mdi mdi-phone me-1"></i> +12345678910
           </span>
         </div>
         <div class="col-12 col-md-4 text-center text-md-end mt-2 mt-md-0">
-          <button class="btn btn-danger btn-sm px-4 align-middle">Join Us Now</button>
+          <button class="btn btn-danger btn-sm px-4 align-middle" onclick="callAlert()">Join Us Now</button>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- !SECTION -->
   <!--SECTION: NAV-->
   <div class="sticky-top">
@@ -74,26 +74,26 @@
 
   <!--SECTION: HERO LANDING-->
   <div class="container-fluid bg-img justify-content-end">
-    <div class="row justify-content-center text-start">
+    <div class="row justify-content-center text-center text-md-start">
       <div class="col-6 col-lg-8 text-shadow">
-        <p class="fw-bold fs-5">WELCOME TO OUR SPORTS CLUB <span class="text-danger">----</span></p>
+        <p class="fw-bold fs-5">WELCOME TO OUR SPORTS CLUB <span class="d-inline-block dash border border-danger border-1 mb-1 ms-2"></span></p>
+        
         <h1 class="display-4 fw-bold">JOIN NOW OUR <span class="text-danger">YOUTH SQUAD CLUB</span></h1>
-        <button class="btn btn-light rounded-pill text-danger px-4 mt-4">JOIN OUR CLUB</button>
+        <button class="btn btn-light rounded-pill text-danger px-4 mt-4" onclick="callAlert()">JOIN OUR CLUB</button>
       </div>
     </div>
   </div>
   <!-- !SECTION -->
   <!--SECTION: features-->
-  <section id="about" class="features-section text-light">
-    <div class="container">
-      <div class="row mt-5 mb-4">
+  <section id="about" class="container-fluid features-section text-light">
+    <div class="row">
+      <div class="col-12 mt-5 mb-4">
         <h1 class="text-center display-4 fs-3 fw-bold mb-3 features-section-text">OUR <span class="text-danger">FEATURES</span></h1>
       </div>
     </div>
 
     <!--features cards-->
-    <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mx-5">
         <!--card 1 -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <div class="feature-card card border-0 text-center h-100">
@@ -135,21 +135,21 @@
           </div>
         </div>
       </div>
-    </div>
+    
   </section>
   <!-- !SECTION -->
 
 
 
   <!--SECTION: sports offered-->
-  <div id="facilities" class="container-fluid bg-dark">
+  <section id="facilities" class="container-fluid bg-dark">
     <div class="row text-light mt-5">
-      <h1 class="text-center display-4 fs-3 fw-bold mb-4 mt-5">SPORTS <span class="text-danger">OFFERED</span></h1>
+      <h1 class="col-12 text-center display-4 fs-3 fw-bold mb-4 mt-5">SPORTS <span class="text-danger">OFFERED</span></h1>
     </div>
-  </div>
+  </section>
 
   <!--sports offered gallery-->
-  <div class="container-fluid bg-dark">
+  <section class="container-fluid bg-dark">
     <div class="row g-3 mb-5">
       <div class="col-6 col-lg-4">
         <img
@@ -182,7 +182,7 @@
           alt="Hockey" class="img-fluid sports-img">
       </div>
     </div>
-  </div>
+  </section>
   <!-- !SECTION -->
 
   <!--SECTION: video section -->
@@ -203,14 +203,14 @@
 
   <!--SECTION: staff carousel-->
   <!--qualified staff-->
-  <div id="blog" class="container-fluid bg-dark">
+  <section id="blog" class="container-fluid bg-dark">
     <div class="row text-light mt-5">
       <h1 class="text-center display-4 fs-3 fw-bold mb-4 mt-5">QUALIFIED <span class="text-danger">STAFF</span></h1>
     </div>
-  </div>
+  </section>
   
   <!-- NOTE: large screens carousel -->
-  <div class="container">
+  <section class="container">
     <div class="row d-none d-lg-block">
       <div id="carouselStaffLg" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -341,122 +341,132 @@
         </button>
         </div>
       </div>
-    </div>
+    </section>
+  </section>
 
     <!--NOTE: small screens carousel -->
-    <div class="d-block d-lg-none">
-      <div id="carouselStaffSm" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active text-center">
-            <img src="./images/ida.png" class="d-block w-75 mx-auto" alt="IDA BEAR">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>IDA BEAR</strong></p>
-              <p>CEO</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="./images/fritz.png" class="d-block w-75 mx-auto" alt="FRITZ VON RUFFENSTEIN">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>FRITZ VON RUFFENSTEIN</strong></p>
-              <p>Arch Duke of Cute</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="./images/chairman-meow.png" class="d-block w-75 mx-auto" alt="CHAIRMAN MEOW">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>CHAIRMAN MEOW</strong></p>
-              <p>Glorious Leader</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://i0.wp.com/novacapsfans.com/wp-content/uploads/2020/11/1E66E1D3-DF9A-4CA9-ADD0-B65EE4E5DD3F.jpeg?ssl=1" class="d-block w-75 mx-auto" alt="ALEX OVECHKIN">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>ALEX OVECHKIN</strong></p>
-              <p>Team Captain</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://pyxis.nymag.com/v1/imgs/295/196/5f609a1bcf3bff4bde163d2287d72a5eaa-kendrick-ranking.rvertical.w570.jpg" class="d-block w-75 mx-auto" alt="K-DOT">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>K-DOT</strong></p>
-              <p>Cool Factor</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/800px-Albert_Einstein_Head.jpg" class="d-block w-75 mx-auto" alt="ALBERT EINSTEIN">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>ALBERT EINSTEIN</strong></p>
-              <p>Smart Guy</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://images.unsplash.com/photo-1601233749202-95d04d5b3c00?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-75 mx-auto" alt="DAVID FROM NEXT DOOR">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>DAVID FROM NEXT DOOR</strong></p>
-              <p>How'd he get in here?</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="./images/rock-resized.png" class="d-block w-75 mx-auto" alt="THE ROCK">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>THE ROCK</strong></p>
-              <p>He's cooking</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://rattlesnakepreachers.com/wp-content/uploads/2022/10/ae051fd2-ac41-477f-9318-4df8a4614281.jpg?w=2000&h=" class="d-block w-75 mx-auto" alt="THE GUY WHO WROTE THIS">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>THE GUY WHO WROTE THIS</strong></p>
-              <p>He's not very good</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://images.unsplash.com/photo-1582236829590-f8cb7de75229?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-75 mx-auto" alt="ZORBAX">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>ZORBAX</strong></p>
-              <p>Twice Divorced on Pluto</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://i2-prod.bristolpost.co.uk/news/bristol-news/article271300.ece/ALTERNATES/s615b/Blackbeard.jpg" class="d-block w-75 mx-auto" alt="EDWARD TEACH">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>EDWARD TEACH</strong></p>
-              <p>"ARRRRRRGGGGGGG!"</p>
-            </div>
-          </div>
-          <div class="carousel-item text-center">
-            <img src="https://hoopshype.com/wp-content/uploads/sites/92/2024/12/i_2e_fe_b5_lebron-james.png" class="d-block w-75 mx-auto" alt="LEBRON JAMES">
-            <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
-              <p><strong>LEBRON JAMES</strong></p>
-              <p>In-House Badminton Coach</p>
-            </div>
+  <section class="d-block d-lg-none">
+    <div id="carouselStaffSm" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="./images/ida.png" class="d-block w-75 mx-auto" alt="IDA BEAR">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>IDA BEAR</strong></p>
+            <p>CEO</p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStaffSm" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselStaffSm" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+        <div class="carousel-item text-center">
+          <img src="./images/fritz.png" class="d-block w-75 mx-auto" alt="FRITZ VON RUFFENSTEIN">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>FRITZ VON RUFFENSTEIN</strong></p>
+            <p>Arch Duke of Cute</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="./images/chairman-meow.png" class="d-block w-75 mx-auto" alt="CHAIRMAN MEOW">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>CHAIRMAN MEOW</strong></p>
+            <p>Glorious Leader</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://i0.wp.com/novacapsfans.com/wp-content/uploads/2020/11/1E66E1D3-DF9A-4CA9-ADD0-B65EE4E5DD3F.jpeg?ssl=1" class="d-block w-75 mx-auto" alt="ALEX OVECHKIN">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>ALEX OVECHKIN</strong></p>
+            <p>Team Captain</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://pyxis.nymag.com/v1/imgs/295/196/5f609a1bcf3bff4bde163d2287d72a5eaa-kendrick-ranking.rvertical.w570.jpg" class="d-block w-75 mx-auto" alt="K-DOT">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>K-DOT</strong></p>
+            <p>Cool Factor</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/800px-Albert_Einstein_Head.jpg" class="d-block w-75 mx-auto" alt="ALBERT EINSTEIN">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>ALBERT EINSTEIN</strong></p>
+            <p>Smart Guy</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://images.unsplash.com/photo-1601233749202-95d04d5b3c00?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-75 mx-auto" alt="DAVID FROM NEXT DOOR">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>DAVID FROM NEXT DOOR</strong></p>
+            <p>How'd he get in here?</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="./images/rock-resized.png" class="d-block w-75 mx-auto" alt="THE ROCK">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>THE ROCK</strong></p>
+            <p>He's cooking</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://rattlesnakepreachers.com/wp-content/uploads/2022/10/ae051fd2-ac41-477f-9318-4df8a4614281.jpg?w=2000&h=" class="d-block w-75 mx-auto" alt="THE GUY WHO WROTE THIS">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>THE GUY WHO WROTE THIS</strong></p>
+            <p>He's not very good</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://images.unsplash.com/photo-1582236829590-f8cb7de75229?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-75 mx-auto" alt="ZORBAX">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>ZORBAX</strong></p>
+            <p>Twice Divorced on Pluto</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://i2-prod.bristolpost.co.uk/news/bristol-news/article271300.ece/ALTERNATES/s615b/Blackbeard.jpg" class="d-block w-75 mx-auto" alt="EDWARD TEACH">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>EDWARD TEACH</strong></p>
+            <p>"ARRRRRRGGGGGGG!"</p>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://hoopshype.com/wp-content/uploads/sites/92/2024/12/i_2e_fe_b5_lebron-james.png" class="d-block w-75 mx-auto" alt="LEBRON JAMES">
+          <div class="bg-danger text-white p-2 mt-2 w-75 mx-auto">
+            <p><strong>LEBRON JAMES</strong></p>
+            <p>In-House Badminton Coach</p>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselStaffSm" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselStaffSm" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
-  </div>
+  </section>
   <!-- !SECTION -->
 
   <!--SECTION: footer-->
-  <footer class="container-fluid bg-dark">
+  <footer class="container-fluid bg-black">
     <div class="row">
-      <div id="contact" class="col-12 bg-dark text-light text-center mt-5 pt-5">
+      <div id="contact" class="col-12 bg-black text-light text-center mt-1 pt-1">
       <p class="m-0 py-3 border-top border-secondary">
         &copy; 2025 SPORTY. All Rights Reserved
       </p>
     </div>
     </div>
   </footer>
+  <!-- !SECTION -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <!-- NOTE: ONCLICK FUNCTIONS -->
+  <script>
+    function callAlert() {
+      window.alert('CALL: +12345678910 to Join the Club!');
+    }
+    function hiddenTab() {
+      window.open("https://www.mapquest.com/us/colorado/your-moms-house-375138762", "_blank");
+    };
+  </script>
 </body>
 
 </html>
