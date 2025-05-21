@@ -1,5 +1,5 @@
 
-/* Class Selectors */
+/* ANCHOR: CLASS SELECTORS */
 
 .bg-img {
   background-image: url("https://media.istockphoto.com/id/144235066/photo/flying-moto.jpg?s=1024x1024&w=is&k=20&c=Vvq4eEZrNQgDQAuUWvcOuhFGYnkFfKt-Tcbwm453vc4=");
@@ -167,7 +167,7 @@ footer {
   object-fit: cover;
 }
 
-/* EFFECTS */
+/* ANCHOR: EFFECTS */
 
 .btn:hover {
   color: #000 !important;
@@ -193,7 +193,7 @@ footer {
 }
 
 
-/* Assets */
+/* ANCHOR: Assets */
 
 @font-face {
   font-family: 'Nico Moji';
