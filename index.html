@@ -20,14 +20,14 @@
       <div class="row align-items-center">
         <div class="col-12 col-md-8 text-center text-md-start text-light">
           <span class="me-4 text-light">
-            <i class="mdi mdi-map me-1"></i>1234 W Street Street City, ST 12345
+            <i class="text-danger mdi mdi-map me-1"></i>1234 W Street Street City, ST 12345
           </span>
           <span>
-            <i class="mdi mdi-phone me-1"></i> +12345678910
+            <i class="text-danger mdi mdi-phone me-1"></i> +12345678910
           </span>
         </div>
         <div class="col-12 col-md-4 text-center text-md-end mt-2 mt-md-0">
-          <button class="btn btn-danger btn-sm px-4 rounded-pill align-middle">Join Us Now</button>
+          <button class="btn btn-danger btn-sm px-4 align-middle">Join Us Now</button>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand fw-bold text-danger" href="#">
-          <img src="../Main/images/logo placeholder.png" alt="logo" class="me-2" height="40px">
+          <img src="./images/logo placeholder.png" alt="logo" class="me-2" height="40px"><h4 class="nico-font">Sporty</h4>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,19 +50,19 @@
               <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">ABOUT</a>
+              <a class="nav-link text-white" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">FACILITIES</a>
+              <a class="nav-link text-white" href="#facilities">FACILITIES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">MEMBERSHIP</a>
+              <a class="nav-link text-white" href="#membership">MEMBERSHIP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">BLOG</a>
+              <a class="nav-link text-white" href="#blog">BLOG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">CONTACT</a>
+              <a class="nav-link text-white" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -71,20 +71,18 @@
   </div>
 
   <!--Jumbotron-->
-  <div class="container-fluid bg-img d-flex align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 jumbotron-text text-light">
-          <p class="fw-bold fs-5">WELCOME TO OUR SPORTS CLUB ----</p>
-          <h1 class="display-1 fw-bold">JOIN NOW OUR <span class="text-danger">YOUTH SQUAD CLUB</span></h1>
-          <button class="btn btn-light btn-sm text-danger btn-pill">Join Now</button>
-        </div>
+  <div class="container-fluid bg-img justify-content-end">
+    <div class="row justify-content-center text-start">
+      <div class="col-6 col-lg-8">
+        <p class="fw-bold fs-5">WELCOME TO OUR SPORTS CLUB <span class="text-danger">----</span></p>
+        <h1 class="display-4 fw-bold">JOIN NOW OUR <span class="text-danger">YOUTH SQUAD CLUB</span></h1>
+        <button class="btn btn-light rounded-pill text-danger px-4 mt-4">JOIN OUR CLUB</button>
       </div>
     </div>
   </div>
 
   <!--features-->
-  <section class="features-section text-light">
+  <section id="about" class="features-section text-light">
     <div class="container">
       <div class="row mt-5 mb-4">
         <h1 class="text-center display-4 fs-3 fw-bold mb-3">OUR <span class="text-danger">FEATURES</span></h1>
@@ -142,16 +140,16 @@
 
 
   <!--sports offered-->
-  <div class="container-fluid bg-dark">
+  <div id="facilities" class="container-fluid bg-dark">
     <div class="row text-light mt-5">
-      <h1 class="text-center display-4 fs-3 fw-bold mb-5">SPORTS <span class="text-danger">OFFERED</span></h1>
+      <h1 class="text-center display-4 fs-3 fw-bold mb-4 mt-5">SPORTS <span class="text-danger">OFFERED</span></h1>
     </div>
   </div>
 
   <!--sports offered gallery-->
   <div class="container-fluid bg-dark">
-    <div class="row g-3 mb-3">
-      <div class="col-6 col-lg-4 mb-3">
+    <div class="row g-3 mb-5">
+      <div class="col-6 col-lg-4">
         <img
           src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Swimmer" class="img-fluid sports-img">
@@ -185,23 +183,25 @@
   </div>
 
   <!-- video section -->
-  <section class="video-section">
+  <section id="membership" class="video-section mb-5">
     <div class="video-overlay"></div>
     <video autoplay muted loop playsinline class="video-bg">
       <source src="./images/video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="video-content text-light">
-      <h3 class="fw-bold">LET THE FEET DO THE TALKING</h3>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio veritatis.</p>
+    <div class="video-content text-light justify-content-center">
+      <h1 class=" text-light display-1"><i class="mdi mdi-play-circle-outline"></i></h1>
+      <h1 class="fw-bold text-danger mb-4">SHOW REEL</h1>
+      <h5 class="fw-bold mb-4">LET THE FEET DO THE TALKING</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum architecto qui repudiandae, pariatur, dolores sunt laudantium libero quo eius quam quae odio nostrum, itaque voluptate ad ex natus quisquam rem maxime nisi ipsum earum quos distinctio.</p>
     </div>
   </section>
 
 
   <!--qualified staff-->
-  <div class="container-fluid bg-dark">
+  <div id="blog" class="container-fluid bg-dark">
     <div class="row text-light mt-5">
-      <h1 class="text-center display-4 fs-3 fw-bold mb-5">QUALIFIED <span class="text-danger">STAFF</span></h1>
+      <h1 class="text-center display-4 fs-3 fw-bold mb-4 mt-5">QUALIFIED <span class="text-danger">STAFF</span></h1>
     </div>
   </div>
 
@@ -375,7 +375,7 @@
   </div>
 
   <!--footer-->
-  <footer class="bg-dark text-light text-center mt-5">
+  <footer id="contact" class="bg-dark text-light text-center mt-5 pt-5">
     <p class="m-0 py-3 border-top border-secondary">
       &copy; 2025 Anthony Rossman. All Rights Reserved
     </p>

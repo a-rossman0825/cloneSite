@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.page-top.text-dark.py-2 {
+.page-top {
   background-color: #2b2b2b;
   color: #fff;
   padding-top: 0.5rem;
@@ -15,13 +15,15 @@
   font-size: 0.9rem;
 }
 
-.bg-img h1 {
-  margin-bottom: 1rem;
-}
-
 .navbar-brand {
   display: flex;
   align-items: center;
+
+}
+
+.btn:hover {
+  color: #000 !important;
+  background-color: rgb(209, 30, 53) !important;
 }
 
 .navbar-brand img {
@@ -30,7 +32,13 @@
 }
 
 .nav-link {
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-left: 2.5rem;
+}
+
+.nav-link:hover {
+  color: rgb(209, 30, 53) !important;
 }
 
 .jumbotron-text {
@@ -43,13 +51,8 @@
   vertical-align: middle;
 }
 
-.btn-pill {
-  border-radius: 50px;
-  margin-top: 1rem;
-}
-
 .features-section {
-  background-image: url('../Main/images/Features-bg.jpg');
+  background-image: url('./images/Features-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -68,7 +71,7 @@
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 1;
 }
 
@@ -84,14 +87,14 @@
 
 
 .card {
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background-color: #1c1c1c;
+  background-color: rgb(209, 30, 53);
   color: #fff;
   border: none;
+  padding-top: 2rem;
 }
 
 .card-body {
@@ -103,19 +106,11 @@
   font-weight: bold;
 }
 
-.card-text {
-  word-wrap: break-word;
-  white-space: normal;
-}
-
 .card:hover {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transform: translateY(-2px);
   transition: all 0.3s ease-in-out;
-}
-
-.sports-img {
-  border-radius: 8px;
+  cursor: pointer;
 }
 
 .sports-img:hover {
@@ -148,9 +143,9 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.7)
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
   );
   z-index: 2;
   pointer-events: none;
@@ -163,12 +158,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.carousel .col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  cursor: pointer;
 }
 
 .carousel .bg-danger {
@@ -185,36 +175,23 @@ footer {
   text-align: center;
 }
 
-
-@media (max-width: 768px) {
-  .sports-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-
-  .card {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
 .carousel img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
-@media (max-width: 991px) {
-  .jumbotron-text {
-    text-align: center;
-    margin: 0 auto;
-  }
+@font-face {
+  font-family: 'Nico Moji';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/nicomoji/v1/NicoMoji-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nicomoji/v1/NicoMoji-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/nicomoji/v1/NicoMoji-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/nicomoji/v1/NicoMoji-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/nicomoji/v1/NicoMoji-Regular.ttf) format('truetype');
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .features .col-md-4 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+.nico-font {
+  font-family: 'Nico Moji';
 }
